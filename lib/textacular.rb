@@ -12,9 +12,10 @@ module Textacular
     'english'
   end
 
-  def search(query = "", exclusive = true)
-    basic_search(query, exclusive)
-  end
+#  interferes with Ransack
+#  def search(query = "", exclusive = true)
+#    basic_search(query, exclusive)
+#  end
 
   def basic_search(query = "", exclusive = true)
     exclusive, query = munge_exclusive_and_query(exclusive, query)
